@@ -12,6 +12,18 @@ Este programa en C++ permite al usuario ingresar una palabra o frase y verifica 
 - Comprueba si la cadena procesada es igual a su reverso.
 - Muestra en consola si la entrada es o no un palíndromo.
 
+## 🛠️ Requisitos previos
+- Tener instalado [MinGW](https://www.mingw-w64.org/) o cualquier compilador de C++ compatible con `g++`.
+- Tener Visual Studio Code instalado.
+- Tener el compilador agregado a la variable de entorno `PATH`.
+
+Puedes verificar que `g++` está instalado con:
+```bash
+
+g++ --version
+
+-----
+
 ## Cómo ejecutar el programa
 
 ### Opción 1: Usando el botón de ejecución en VS Code
@@ -21,11 +33,14 @@ Este programa en C++ permite al usuario ingresar una palabra o frase y verifica 
 3. Haz clic en ese botón para compilar y ejecutar automáticamente el programa.
 4. La consola integrada aparecerá y podrás ingresar la palabra o frase.
 5. Escribe la entrada y presiona Enter para ver el resultado.
-
 ---
+### Opción 2: usando comandos 
 
-### Opción 2: Usando la terminal integrada de VS Code
-
-1. Abre la terminal integrada en VS Code con `Ctrl + \``.
-2. Compila el programa con este comando (asegúrate de tener instalado un compilador como g++):
-
+1. Abre Visual Studio Code y carga la carpeta raíz practica-multilenguaje.
+2. Abre una terminal en VSCode (Ctrl + ñ).
+3. Navega a la carpeta donde está el archivo:
+cd cpp
+4. Esto creará un archivo ejecutable llamado palindromo.exe (en Windows).
+g++ palindromo.cpp -o palindromo 
+5. Después de compilar, ejecuta el programa con:
+palindromo
